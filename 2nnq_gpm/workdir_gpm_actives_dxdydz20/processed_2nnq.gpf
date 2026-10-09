@@ -1,0 +1,18 @@
+outlev 1
+npts 8 8 8
+gridfld processed_2nnq.fld # avs field file
+spacing 2.00000
+receptor_types A C HD N OA SA
+ligand_types A C Cl F HD N NA OA SA
+receptor receptor.pdbqt
+gridcenter 4.628 7.622 17.490
+smooth 0.500000
+map Receptor.A.map
+map Receptor.C.map
+map Receptor.Cl.map
+map Receptor.F.map
+map Receptor.HD.map
+map Receptor.N.map
+map Receptor.NA.map
+map Receptor.OA.map
+map Receptor.SA.map

@@ -1,0 +1,38 @@
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  C12_16 
+REMARK    2  A    between atoms: C5_5  and  N1_7 
+REMARK       I    between atoms: N1_7  and  C7_8 
+REMARK    3  A    between atoms: C7_8  and  C8_10 
+REMARK    4  A    between atoms: C10_12  and  C11_13 
+ROOT
+ATOM      1  C1  <0> d   1      -5.798  -0.870  -0.317  0.00  0.00     0.003 C 
+ATOM      2  C2  <0> d   1      -5.760   0.314  -1.286  0.00  0.00     0.014 C 
+ATOM      3  C3  <0> d   1      -5.568  -0.202  -2.714  0.00  0.00     0.095 C 
+ATOM      4  C4  <0> d   1      -4.253  -0.977  -2.804  0.00  0.00     0.038 C 
+ATOM      5  C5  <0> d   1      -4.291  -2.161  -1.835  0.00  0.00     0.085 C 
+ATOM      6  C6  <0> d   1      -4.482  -1.645  -0.407  0.00  0.00     0.025 C 
+ENDROOT
+BRANCH   5   7
+ATOM      7  N1  <0> d   1      -3.031  -2.903  -1.921  0.00  0.00    -0.356 N 
+ATOM      8  C7  <0> d   1      -2.993  -4.207  -1.583  0.00  0.00     0.223 C 
+ATOM      9  O1  <0> d   1      -4.002  -4.766  -1.207  0.00  0.00    -0.273 OA
+ATOM     10  H13 <0> d   1      -2.224  -2.457  -2.222  0.00  0.00     0.162 HD
+BRANCH   8  11
+ATOM     11  C8  <0> d   1      -1.697  -4.971  -1.672  0.00  0.00     0.093 A 
+ATOM     12  C10 <0> d   1      -0.737  -4.874  -0.484  0.00  0.00     0.100 A 
+ATOM     13  C9  <0> d   1      -1.517  -6.168  -0.735  0.00  0.00     0.031 A 
+BRANCH  12  14
+ATOM     14  C11 <0> d   1      -1.160  -4.022   0.684  0.00  0.00     0.177 C 
+ATOM     15  O2  <0> d   1      -1.924  -4.471   1.522  0.00  0.00    -0.648 OA
+ATOM     16  O3  <0> d   1      -0.738  -2.883   0.792  0.00  0.00    -0.648 OA
+ENDBRANCH  12  14
+ENDBRANCH   8  11
+ENDBRANCH   5   7
+BRANCH   3  17
+ATOM     17  C12 <0> d   1      -5.530   0.982  -3.683  0.00  0.00     0.391 C 
+ATOM     18  F1  <0> d   1      -4.467   1.827  -3.345  0.00  0.00    -0.171 F 
+ATOM     19  F2  <0> d   1      -5.355   0.510  -4.988  0.00  0.00    -0.171 F 
+ATOM     20  F3  <0> d   1      -6.733   1.691  -3.600  0.00  0.00    -0.171 F 
+ENDBRANCH   3  17
+TORSDOF 4

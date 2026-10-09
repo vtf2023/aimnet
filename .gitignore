@@ -1,0 +1,35 @@
+# 1. VS Code 本機端設定
+# 忽略個人化的編輯器設定，避免覆蓋別人的設定
+.vscode/
+
+# 2. Python 執行時產生的快取與編譯檔
+# 這些是系統自動產生的，不需要上傳
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 3. 虛擬環境資料夾 (非常重要)
+# 避免將整個 Miniforge 或 Python 虛擬環境包裝上傳 (檔案通常極大)
+venv/
+env/
+.conda/
+miniconda3/
+miniforge3/
+
+# 4. Jupyter Notebook 快取 (如果你有跑腳本或實驗)
+.ipynb_checkpoints/
+
+# 5. 環境變數與機密資訊
+# 絕對不要把 API 密鑰 (如串接大模型的金鑰) 上傳到公開的 GitHub
+.env
+*.pem
+
+# 6. 作業系統自動產生的系統檔
+.DS_Store
+Thumbs.db
+
+# 7. 日誌檔與大型暫存資料 (可視專案情況自行調整)
+# 例如跑分子對接或 CUDA 運算時產生的大型 log 或快取
+*.log
+
+2nnq_data/2nnq.zip

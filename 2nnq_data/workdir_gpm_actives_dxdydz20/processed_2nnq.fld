@@ -1,0 +1,44 @@
+# AVS field file
+#
+# AutoDock Atomic Affinity and Electrostatic Grids
+#
+# Created by autogrid4 4.2.7.x.2019-07-11.
+#
+#SPACING 2.000
+#NELEMENTS 8 8 8
+#CENTER 4.628 7.622 17.490
+#MACROMOLECULE receptor.pdbqt
+#GRID_PARAMETER_FILE processed_2nnq.gpf
+#
+ndim=3			# number of dimensions in the field
+dim1=9			# number of x-elements
+dim2=9			# number of y-elements
+dim3=9			# number of z-elements
+nspace=3		# number of physical coordinates per point
+veclen=9		# number of affinity values at each point
+data=float		# data type (byte, integer, float, double)
+field=uniform		# field type (uniform, rectilinear, irregular)
+coord 1 file=processed_2nnq.xyz filetype=ascii offset=0
+coord 2 file=processed_2nnq.xyz filetype=ascii offset=2
+coord 3 file=processed_2nnq.xyz filetype=ascii offset=4
+label=A-affinity	# component label for variable 1
+label=C-affinity	# component label for variable 2
+label=Cl-affinity	# component label for variable 3
+label=F-affinity	# component label for variable 4
+label=HD-affinity	# component label for variable 5
+label=N-affinity	# component label for variable 6
+label=NA-affinity	# component label for variable 7
+label=OA-affinity	# component label for variable 8
+label=SA-affinity	# component label for variable 9
+#
+# location of affinity grid files and how to read them
+#
+variable 1 file=Receptor.A.map filetype=ascii skip=6
+variable 2 file=Receptor.C.map filetype=ascii skip=6
+variable 3 file=Receptor.Cl.map filetype=ascii skip=6
+variable 4 file=Receptor.F.map filetype=ascii skip=6
+variable 5 file=Receptor.HD.map filetype=ascii skip=6
+variable 6 file=Receptor.N.map filetype=ascii skip=6
+variable 7 file=Receptor.NA.map filetype=ascii skip=6
+variable 8 file=Receptor.OA.map filetype=ascii skip=6
+variable 9 file=Receptor.SA.map filetype=ascii skip=6
